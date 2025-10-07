@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomBec | Edize EdTech</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hombec-hero {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.9) 0%, rgba(16, 185, 129, 0.9) 100%);
+        }
+        .highlight-card {
+            transition: all 0.3s ease;
+        }
+        .highlight-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .comparison-table {
+            border-collapse: separate;
+            border-spacing: 0;
+        }
+        .comparison-table th, .comparison-table td {
+            border: 1px solid #E5E7EB;
+            padding: 12px 16px;
+        }
+        .comparison-table th {
+            background-color: #F9FAFB;
+            font-weight: 600;
+        }
+        .comparison-table tr:nth-child(even) td {
+            background-color: #F9FAFB;
+        }
+        .comparison-table tr:hover td {
+            background-color: #F3F4F6;
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="http://static.photos/education/200x200/42" alt="Edize Logo">
+                        <span class="ml-2 text-xl font-bold text-primary">Edize EdTech</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark hover:text-primary px-3 py-2 font-medium">Home</a>
+                    <a href="index.html#programs" class="text-dark hover:text-primary px-3 py-2 font-medium">Programs</a>
+                    <a href="index.html#about" class="text-dark hover:text-primary px-3 py-2 font-medium">About</a>
+                    <a href="index.html#contact" class="text-dark hover:text-primary px-3 py-2 font-medium">Contact</a>
+                    <a href="#" class="bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition">Login</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-dark hover:text-primary focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hombec-hero text-white pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="inline-block bg-white bg-opacity-20 px-4 py-1 rounded-full mb-4">
+                        <span class="text-sm font-medium">FLAGSHIP PROGRAM</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Home-Based Entrance Coaching</h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">Learn Anytime, Anywhere with India's Top Faculty - No Compromises on Quality</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Start Free Trial</a>
+                        <a href="#" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition">Watch Video</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="http://static.photos/education/640x360/9" alt="HomBec Learning" class="rounded-lg shadow-2xl max-w-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Highlights -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Why HomBec is Different</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Our flagship program combines the convenience of home learning with the effectiveness of classroom coaching</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Highlight 1 -->
+                <div class="highlight-card bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="target" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">All-in-One Prep</h3>
+                    </div>
+                    <p class="text-gray-600">Comprehensive preparation for Boards + Competitive Exams (NEET/JEE/CUET/NATA) in one integrated program.</p>
+                </div>
+                
+                <!-- Highlight 2 -->
+                <div class="highlight-card bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="user" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Live Expert Coaching</h3>
+                    </div>
+                    <p class="text-gray-600">100% live classes by India's top faculty - no pre-recorded or mixed-language videos like other platforms.</p>
+                </div>
+                
+                <!-- Highlight 3 -->
+                <div class="highlight-card bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="bar-chart-2" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Smart Analytics</h3>
+                    </div>
+                    <p class="text-gray-600">AI-powered performance tracking with personalized recommendations to maximize your score improvement.</p>
+                </div>
+                
+                <!-- Highlight 4 -->
+                <div class="highlight-card bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="home" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Safe & Convenient</h3>
+                    </div>
+                    <p class="text-gray-600">Learn from the safety and comfort of your home without compromising on quality or peer interaction.</p>
+                </div>
+                
+                <!-- Highlight 5 -->
+                <div class="highlight-card bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="dollar-sign" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Transparent Pricing</h3>
+                    </div>
+                    <p class="text-gray-600">Same affordable fee structure for students in India and abroad - no hidden charges or differential pricing.</p>
+                </div>
+                
+                <!-- Highlight 6 -->
+                <div class="highlight-card bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                            <i data-feather="globe" class="text-primary w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Global Access</h3>
+                    </div>
+                    <p class="text-gray-600">Optimized for students in Middle East and other countries with timezone-friendly schedules and international payment options.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">How HomBec Works</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Simple steps to get started with India's most effective home-based coaching</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Step 1 -->
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+                        <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full font-bold">1</div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Free Assessment</h3>
+                    <p class="text-gray-600 text-sm">Take our diagnostic test to evaluate your current level</p>
+                </div>
+                
+                <!-- Step 2 -->
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+                        <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full font-bold">2</div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Personalized Plan</h3>
+                    <p class="text-gray-600 text-sm">Get a customized study plan based on your goals and assessment</p>
+                </div>
+                
+                <!-- Step 3 -->
+                <div class="text-center">
+                    <div class="bg-primary bg-opacity-10 w-16 h-16 flex items-center justify-center rounded-full mx-auto mb-4">
+                        <div class="bg-primary text-white w-10 h-10 flex items-center justify-center rounded-full font-bold">3</div>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Start Learning</h3>
+                    <p class="text-gray-600 text-sm">Begin live classes with expert faculty and track your progress</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">HomBec vs Traditional Coaching</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Why thousands of students are switching to our home-based model</p>
+            </div>
+            <div class="overflow-x-auto">
+                <table class="comparison-table w-full rounded-lg overflow-hidden">
+                    <thead>
+                        <tr>
+                            <th class="text-left">Feature</th>
+                            <th class="text-center">HomBec</th>
+                            <th class="text-center">Traditional Coaching</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="text-left font-medium">Teaching Quality</td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">India's Top Faculty</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Varies by Institute</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left font-medium">Class Format</td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">100% Live Interactive</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Live but Crowded</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left font-medium">Study Material</td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">Digital + Printed</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Printed Only</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left font-medium">Doubt Resolution</td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">24hr Guarantee</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Next Class</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left font-medium">Flexibility</td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">Learn Anytime</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">Fixed Schedule</div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-left font-medium">Cost</td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-secondary bg-opacity-10 text-secondary px-3 py-1 rounded-full text-sm">₹25,000/year</div>
+                                </div>
+                            </td>
+                            <td class="text-center">
+                                <div class="flex justify-center">
+                                    <div class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm">₹50,000+/year</div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Results -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Proven Results</h2>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">Our students consistently outperform national averages</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 text-center mb-12">
+                <div>
+                    <div class="text-5xl font-bold mb-2">98%</div>
+                    <div class="text-lg opacity-90">Success Rate in Boards</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">85%</div>
+                    <div class="text-lg opacity-90">Qualify NEET/JEE</div>
+                </div>
+                <div>
+                    <div class="text-5xl font-bold mb-2">92%</div>
+                    <div class="text-lg opacity-90">Parent Satisfaction</div>
+                </div>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/10" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-medium">Riya Kapoor</div>
+                            <div class="text-sm opacity-75">NEET 2023 - AIR 87</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"HomBec's live classes were so interactive, I never missed classroom coaching. The teachers were always available for doubts, and I saved 3 hours daily on commuting!"</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/11" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-medium">Arjun Nair</div>
+                            <div class="text-sm opacity-75">JEE Advanced 2023 - AIR 156</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"The AI tests predicted my JEE rank within 200 positions! The personalized practice sheets based on my weak areas were game-changers."</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/12" alt="Parent" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-medium">Mrs. Patel</div>
+                            <div class="text-sm opacity-75">Parent of NRI Student (Dubai)</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"As NRI parents, we struggled to find quality coaching in Dubai. HomBec's timezone-adjusted classes and global payment options were perfect for us."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Demo -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">See HomBec in Action</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Watch how our platform delivers classroom-quality education at home</p>
+            </div>
+            <div class="bg-gray-900 rounded-xl overflow-hidden max-w-4xl mx-auto">
+                <div class="aspect-w-16 aspect-h-9">
+                    <img src="http://static.photos/education/1024x576/1" alt="Video Thumbnail" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <button class="bg-primary text-white p-4 rounded-full hover:bg-opacity-90 transition">
+                            <i data-feather="play" class="w-8 h-8"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Simple, Transparent Pricing</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Same affordable fees for students in India and abroad</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- Annual Plan -->
+                <div class="border-2 border-primary rounded-xl overflow-hidden">
+                    <div class="bg-primary text-white p-6 text-center">
+                        <h3 class="text-xl font-semibold mb-2">Annual Plan</h3>
+                        <div class="text-4xl font-bold mb-2">₹25,000<span class="text-lg font-normal">/year</span></div>
+                        <p class="opacity-90">Best value - save 30%</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>All HomBec features included</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Free tablet (one-time)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Printed study material</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Priority doubt resolution</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center bg-primary text-white px-4 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Enroll Now</a>
+                    </div>
+                </div>
+                
+                <!-- Monthly Plan -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="bg-gray-50 p-6 text-center border-b border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2">Monthly Plan</h3>
+                        <div class="text-4xl font-bold mb-2">₹2,500<span class="text-lg font-normal">/month</span></div>
+                        <p class="text-gray-600">Flexible option</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>All HomBec features included</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Digital study material</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Standard doubt resolution</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="x" class="text-gray-400 w-4 h-4 mr-2 mt-1"></i>
+                                <span class="text-gray-400">No free tablet</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center border border-primary text-primary px-4 py-3 rounded-md font-medium hover:bg-primary hover:text-white transition">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-8 text-gray-600">
+                <p>14-day money-back guarantee | No hidden fees | Global payment options available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Experience the Future of Learning?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Join thousands of successful students who chose HomBec for their exam preparation</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="#" class="bg-white text-secondary px-8 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Start Free Trial</a>
+                <a href="#" class="border-2 border-white text-white px-8 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition">Talk to Counselor</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img class="h-8 w-auto" src="http://static.photos/education/200x200/42" alt="Edize Logo">
+                        <span class="ml-2 text-xl font-bold text-white">Edize EdTech</span>
+                    </div>
+                    <p class="mb-4">Smart Coaching for Smarter Futures</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="edize-learning-solution.html" class="hover:text-white transition">EDIZE LEARNING SOLUTION</a></li>
+                        <li><a href="edize-success-centre.html" class="hover:text-white transition">EDIZE SUCCESS CENTRE</a></li>
+                        <li><a href="hombec.html" class="hover:text-white transition">HomBec</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Team</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4">Support</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Edize EdTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </a>
+
+    <script>
+        // Initialize feather icons
+        feather.replace();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

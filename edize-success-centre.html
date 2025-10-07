@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EDIZE SUCCESS CENTRE | Edize EdTech</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4F46E5',
+                        secondary: '#10B981',
+                        dark: '#1F2937',
+                        light: '#F9FAFB'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .success-hero {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.9) 0%, rgba(16, 185, 129, 0.9) 100%);
+        }
+        .exam-card {
+            transition: all 0.3s ease;
+        }
+        .exam-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+    </style>
+</head>
+<body class="bg-light text-dark">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <img class="h-8 w-auto" src="http://static.photos/education/200x200/42" alt="Edize Logo">
+                        <span class="ml-2 text-xl font-bold text-primary">Edize EdTech</span>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="text-dark hover:text-primary px-3 py-2 font-medium">Home</a>
+                    <a href="index.html#programs" class="text-dark hover:text-primary px-3 py-2 font-medium">Programs</a>
+                    <a href="index.html#about" class="text-dark hover:text-primary px-3 py-2 font-medium">About</a>
+                    <a href="index.html#contact" class="text-dark hover:text-primary px-3 py-2 font-medium">Contact</a>
+                    <a href="#" class="bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition">Login</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="text-dark hover:text-primary focus:outline-none">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Program Hero Section -->
+    <section class="success-hero text-white pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div class="inline-block bg-white bg-opacity-20 px-4 py-1 rounded-full mb-4">
+                        <span class="text-sm font-medium">FOR COMPETITIVE EXAMS</span>
+                    </div>
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 leading-tight">Advanced Coaching for Competitive Exam Excellence</h1>
+                    <p class="text-lg md:text-xl mb-8 opacity-90">Expert-led live classes, AI performance tracking, and rigorous test series for NEET, JEE, CUET, and other major entrance exams.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-white text-primary px-6 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Enroll Now</a>
+                        <a href="#" class="border-2 border-white text-white px-6 py-3 rounded-md font-medium hover:bg-white hover:bg-opacity-10 transition">Free Demo Class</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="http://static.photos/education/640x360/7" alt="Edize Success Centre" class="rounded-lg shadow-2xl max-w-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Overview -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">The Ultimate Preparation Hub for Aspirants</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">EDIZE SUCCESS CENTRE combines the best of classroom coaching with cutting-edge technology for comprehensive exam preparation</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 mb-16">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Why Students Choose Edize</h3>
+                    <p class="text-gray-600 mb-6">In the highly competitive world of entrance exams, traditional coaching often falls short. Our Success Centre provides:</p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="check" class="text-primary w-4 h-4"></i>
+                            </div>
+                            <span>India's top faculty with 15+ years of teaching experience</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="check" class="text-primary w-4 h-4"></i>
+                            </div>
+                            <span>AI-powered performance analysis and personalized feedback</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="check" class="text-primary w-4 h-4"></i>
+                            </div>
+                            <span>Comprehensive test series that mimic actual exam patterns</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-2 rounded-full mr-4 mt-1">
+                                <i data-feather="check" class="text-primary w-4 h-4"></i>
+                            </div>
+                            <span>Doubt resolution within 24 hours by subject experts</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="inline-flex items-center text-primary font-medium hover:underline">
+                        See our student success stories
+                        <i data-feather="arrow-right" class="w-4 h-4 ml-2"></i>
+                    </a>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <img src="http://static.photos/education/640x360/8" alt="Success Centre Classroom" class="w-full rounded-lg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exams Covered -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Exams We Prepare You For</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Comprehensive preparation for all major national and state-level entrance exams</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- NEET -->
+                <div class="exam-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="activity" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">NEET</h3>
+                    <p class="text-gray-600 text-sm">National Eligibility cum Entrance Test for medical aspirants</p>
+                </div>
+                
+                <!-- JEE -->
+                <div class="exam-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="cpu" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">JEE (Mains & Advanced)</h3>
+                    <p class="text-gray-600 text-sm">Joint Entrance Examination for engineering aspirants</p>
+                </div>
+                
+                <!-- CUET -->
+                <div class="exam-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="book" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">CUET</h3>
+                    <p class="text-gray-600 text-sm">Common University Entrance Test for central universities</p>
+                </div>
+                
+                <!-- NATA -->
+                <div class="exam-card bg-white p-6 rounded-xl shadow-md text-center">
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-4">
+                        <i data-feather="pen-tool" class="text-primary w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">NATA</h3>
+                    <p class="text-gray-600 text-sm">National Aptitude Test in Architecture for design aspirants</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Our Winning Methodology</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Proven strategies that deliver exceptional results</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-md mr-4">
+                            <i data-feather="users" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Expert Faculty</h3>
+                    </div>
+                    <p class="text-gray-600">Learn from IIT/NIT alumni and experienced educators with 15+ years of teaching experience and multiple selections to their credit.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-md mr-4">
+                            <i data-feather="bar-chart-2" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">AI Performance Tracking</h3>
+                    </div>
+                    <p class="text-gray-600">Our smart algorithms analyze your performance across tests to identify weak areas and suggest customized improvement plans.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-md mr-4">
+                            <i data-feather="clipboard" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Comprehensive Test Series</h3>
+                    </div>
+                    <p class="text-gray-600">50+ full-length mock tests designed by experts to simulate actual exam conditions, complete with detailed solutions and analysis.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-md mr-4">
+                            <i data-feather="video" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Recorded Lecture Library</h3>
+                    </div>
+                    <p class="text-gray-600">Access to 1000+ hours of recorded lectures for revision, available 24/7 on our mobile app with offline viewing capability.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-md mr-4">
+                            <i data-feather="message-square" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Doubt Resolution</h3>
+                    </div>
+                    <p class="text-gray-600">24-hour doubt resolution guarantee with step-by-step explanations from subject matter experts via chat, video call, or forum.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary text-white p-2 rounded-md mr-4">
+                            <i data-feather="book-open" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold">Study Material</h3>
+                    </div>
+                    <p class="text-gray-600">Comprehensive, exam-focused study material updated annually with color-coded important concepts, mnemonics, and memory aids.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Success Stories</h2>
+                <p class="text-lg opacity-90 max-w-2xl mx-auto">Hear from our students who achieved their dreams with Edize</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/6" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-medium">Aryan Singh</div>
+                            <div class="text-sm opacity-75">NEET 2023 - AIR 142</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"The AI performance tracker helped me identify my weak chapters early. The faculty's teaching methodology made complex biology concepts so simple. I couldn't have achieved this rank without Edize!"</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/7" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-medium">Priya Patel</div>
+                            <div class="text-sm opacity-75">JEE Advanced 2023 - AIR 89</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"The test series at Edize was tougher than actual JEE, which prepared me perfectly. My physics improved from 60% to 95% accuracy in just 4 months with their targeted practice modules."</p>
+                </div>
+                <div class="bg-white bg-opacity-10 p-6 rounded-xl">
+                    <div class="flex items-center mb-4">
+                        <img src="http://static.photos/people/200x200/8" alt="Student" class="w-12 h-12 rounded-full object-cover mr-4">
+                        <div>
+                            <div class="font-medium">Rahul Verma</div>
+                            <div class="text-sm opacity-75">CUET 2023 - Delhi University</div>
+                        </div>
+                    </div>
+                    <p class="opacity-90">"As someone who couldn't afford expensive coaching, Edize's affordable fees and quality teaching were a blessing. The recorded lectures helped me revise anytime, and I scored 98%ile in CUET!"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-dark mb-4">Affordable Excellence</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">Premium quality coaching at reasonable prices</p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Basic Plan -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="bg-gray-50 p-6 border-b border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2">Basic Plan</h3>
+                        <div class="text-3xl font-bold text-primary mb-2">₹12,999<span class="text-lg text-gray-600 font-normal">/year</span></div>
+                        <p class="text-gray-600 text-sm">Perfect for self-motivated learners</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Access to all recorded lectures</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>20 full-length mock tests</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Basic study material (PDF)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="x" class="text-gray-400 w-4 h-4 mr-2 mt-1"></i>
+                                <span class="text-gray-400">Live classes</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="x" class="text-gray-400 w-4 h-4 mr-2 mt-1"></i>
+                                <span class="text-gray-400">Doubt resolution</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center border border-primary text-primary px-4 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition">Choose Plan</a>
+                    </div>
+                </div>
+                
+                <!-- Standard Plan -->
+                <div class="border-2 border-primary rounded-xl overflow-hidden relative">
+                    <div class="absolute top-0 right-0 bg-primary text-white text-xs font-bold px-3 py-1 transform translate-x-2 -translate-y-2 rounded">POPULAR</div>
+                    <div class="bg-gray-50 p-6 border-b border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2">Standard Plan</h3>
+                        <div class="text-3xl font-bold text-primary mb-2">₹24,999<span class="text-lg text-gray-600 font-normal">/year</span></div>
+                        <p class="text-gray-600 text-sm">Most popular choice for serious aspirants</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>All Basic Plan features</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Weekly live classes (2 per subject)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>50 full-length mock tests</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Printed study material</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Email doubt resolution (48hr)</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center bg-primary text-white px-4 py-2 rounded-md font-medium hover:bg-opacity-90 transition">Choose Plan</a>
+                    </div>
+                </div>
+                
+                <!-- Premium Plan -->
+                <div class="border border-gray-200 rounded-xl overflow-hidden">
+                    <div class="bg-gray-50 p-6 border-b border-gray-200">
+                        <h3 class="text-xl font-semibold mb-2">Premium Plan</h3>
+                        <div class="text-3xl font-bold text-primary mb-2">₹39,999<span class="text-lg text-gray-600 font-normal">/year</span></div>
+                        <p class="text-gray-600 text-sm">Complete preparation with personal mentorship</p>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3 mb-6">
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>All Standard Plan features</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Daily live classes (5 per week)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Unlimited mock tests</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>Premium study material (color)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i data-feather="check" class="text-secondary w-4 h-4 mr-2 mt-1"></i>
+                                <span>24hr doubt resolution (video call)</span>
+                            </li>
+                        </ul>
+                        <a href="#" class="block text-center border border-primary text-primary px-4 py-2 rounded-md font-medium hover:bg-primary hover:text-white transition">Choose Plan</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center justify-between">
+                <div class="md:w-2/3 mb-8 md:mb-0">
+                    <h2 class="text-3xl font-bold mb-4">Start Your Success Journey Today</h2>
+                    <p class="text-xl opacity-90">Limited seats available for 2024-25 batch</p>
+                </div>
+                <div class="md:w-1/3 flex justify-end">
+                    <a href="#" class="bg-white text-secondary px-8 py-3 rounded-md font-medium hover:bg-opacity-90 transition">Enroll Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-300 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <img class="h-8 w-auto" src="http://static.photos/education/200x200/42" alt="Edize Logo">
+                        <span class="ml-2 text-xl font-bold text-white">Edize EdTech</span>
+                    </div>
+                    <p class="mb-4">Smart Coaching for Smarter Futures</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="text-gray-300 hover:text-white">
+                            <i data-feather="linkedin" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4">Programs</h3>
+                    <ul class="space-y-2">
+                        <li><a href="edize-learning-solution.html" class="hover:text-white transition">EDIZE LEARNING SOLUTION</a></li>
+                        <li><a href="edize-success-centre.html" class="hover:text-white transition">EDIZE SUCCESS CENTRE</a></li>
+                        <li><a href="hombec.html" class="hover:text-white transition">HomBec</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Our Team</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-white font-medium mb-4">Contact</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start">
+                            <i data-feather="mail" class="w-4 h-4 mr-2 mt-1"></i>
+                            <a href="mailto:info@edize.com" class="hover:text-white transition">info@edize.com</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="phone" class="w-4 h-4 mr-2 mt-1"></i>
+                            <a href="tel:+911234567890" class="hover:text-white transition">+91 12345 67890</a>
+                        </li>
+                        <li class="flex items-start">
+                            <i data-feather="map-pin" class="w-4 h-4 mr-2 mt-1"></i>
+                            <span>Tech Park, Bangalore, India</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center">
+                <p>&copy; 2023 Edize EdTech. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="fixed bottom-6 right-6 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-opacity-90 transition">
+        <i data-feather="arrow-up" class="w-5 h-5"></i>
+    </a>
+
+    <script>
+        // Initialize feather icons
+        feather.replace();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
